@@ -1,0 +1,1347 @@
+{
+  "contractName": "Parking",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "spots",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isAvailable",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "carSerialNumber",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "modificationDate",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "spotsCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"spots\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"isAvailable\",\"type\":\"bool\"},{\"internalType\":\"string\",\"name\":\"carSerialNumber\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"modificationDate\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"spotsCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Parking.sol\":\"Parking\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Parking.sol\":{\"keccak256\":\"0x94994b840700ccfcb321c6d8232f00c2628e7b70386827451f6c1abb4278a7a8\",\"urls\":[\"bzz-raw://185c76da8df6504e7368bb32f4f937cccb3cd60bc4b8906102a96e93b248a001\",\"dweb:/ipfs/Qmbf3oAqkb4DwEYPKVN2Mg3WUaYkh9ncLDAJ2KMZv7Lr7Q\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610229806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063145a8bdf1461003b578063488944b8146100fb575b600080fd5b6100676004803603602081101561005157600080fd5b8101908080359060200190929190505050610119565b604051808581526020018415151515815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b838110156100bd5780820151818401526020810190506100a2565b50505050905090810190601f1680156100ea5780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b6101036101ee565b6040518082815260200191505060405180910390f35b60006020528060005260406000206000915090508060000154908060010160009054906101000a900460ff1690806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101de5780601f106101b3576101008083540402835291602001916101de565b820191906000526020600020905b8154815290600101906020018083116101c157829003601f168201915b5050505050908060030154905084565b6001548156fea265627a7a72315820eb33514b6b76a679219407fc558e83fbf261f26b0e947fee135168578dce98a464736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063145a8bdf1461003b578063488944b8146100fb575b600080fd5b6100676004803603602081101561005157600080fd5b8101908080359060200190929190505050610119565b604051808581526020018415151515815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b838110156100bd5780820151818401526020810190506100a2565b50505050905090810190601f1680156100ea5780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b6101036101ee565b6040518082815260200191505060405180910390f35b60006020528060005260406000206000915090508060000154908060010160009054906101000a900460ff1690806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101de5780601f106101b3576101008083540402835291602001916101de565b820191906000526020600020905b8154815290600101906020018083116101c157829003601f168201915b5050505050908060030154905084565b6001548156fea265627a7a72315820eb33514b6b76a679219407fc558e83fbf261f26b0e947fee135168578dce98a464736f6c63430005100032",
+  "sourceMap": "26:454:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:454:0;;;;;;;",
+  "deployedSourceMap": "26:454:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:454:0;;;;;;;;;;;;;;;;;;;;;;;;180:34;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;180:34:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;180:34:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;221:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;180:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;221:22::-;;;;:::o",
+  "source": "\npragma solidity 0.5.16;\n\ncontract Parking {\n\n    struct Spot{\n        uint id;\n        bool isAvailable;\n        string carSerialNumber;\n        uint modificationDate;\n    }\n\n    mapping(uint => Spot) public spots;\n\n    uint public spotsCount;\n\n    function addSpot () private {\n        spotsCount ++;\n        spots[spotsCount] = Spot(spotsCount, false, '', now);\n    }\n\n    function parking () private {\n        while(spotsCount <= 20){\n            addSpot();\n        }\n    }\n\n}",
+  "sourcePath": "/home/standalone/Projects/BlocPark/parkchain/contracts/Parking.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Parking.sol",
+    "exportedSymbols": {
+      "Parking": [
+        47
+      ]
+    },
+    "id": 48,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 47,
+        "linearizedBaseContracts": [
+          47
+        ],
+        "name": "Parking",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Parking.Spot",
+            "id": 10,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 10,
+                "src": "71:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "71:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "isAvailable",
+                "nodeType": "VariableDeclaration",
+                "scope": 10,
+                "src": "88:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "88:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7,
+                "name": "carSerialNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 10,
+                "src": "114:22:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 6,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "114:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 9,
+                "name": "modificationDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 10,
+                "src": "146:21:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 8,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "146:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Spot",
+            "nodeType": "StructDefinition",
+            "scope": 47,
+            "src": "50:124:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "name": "spots",
+            "nodeType": "VariableDeclaration",
+            "scope": 47,
+            "src": "180:34:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Spot_$10_storage_$",
+              "typeString": "mapping(uint256 => struct Parking.Spot)"
+            },
+            "typeName": {
+              "id": 13,
+              "keyType": {
+                "id": 11,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "188:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "180:21:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Spot_$10_storage_$",
+                "typeString": "mapping(uint256 => struct Parking.Spot)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 12,
+                "name": "Spot",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 10,
+                "src": "196:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Spot_$10_storage_ptr",
+                  "typeString": "struct Parking.Spot"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 16,
+            "name": "spotsCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 47,
+            "src": "221:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 15,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "221:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 33,
+              "nodeType": "Block",
+              "src": "278:92:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 20,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "288:13:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 19,
+                      "name": "spotsCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 16,
+                      "src": "288:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 21,
+                  "nodeType": "ExpressionStatement",
+                  "src": "288:13:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 31,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 22,
+                        "name": "spots",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "311:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Spot_$10_storage_$",
+                          "typeString": "mapping(uint256 => struct Parking.Spot storage ref)"
+                        }
+                      },
+                      "id": 24,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 23,
+                        "name": "spotsCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 16,
+                        "src": "317:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "311:17:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Spot_$10_storage",
+                        "typeString": "struct Parking.Spot storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 26,
+                          "name": "spotsCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 16,
+                          "src": "336:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "66616c7365",
+                          "id": 27,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "348:5:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "false"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "",
+                          "id": 28,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "355:2:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                            "typeString": "literal_string \"\""
+                          },
+                          "value": ""
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 29,
+                          "name": "now",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 64,
+                          "src": "359:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                            "typeString": "literal_string \"\""
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 25,
+                        "name": "Spot",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10,
+                        "src": "331:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Spot_$10_storage_ptr_$",
+                          "typeString": "type(struct Parking.Spot storage pointer)"
+                        }
+                      },
+                      "id": 30,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "331:32:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Spot_$10_memory",
+                        "typeString": "struct Parking.Spot memory"
+                      }
+                    },
+                    "src": "311:52:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Spot_$10_storage",
+                      "typeString": "struct Parking.Spot storage ref"
+                    }
+                  },
+                  "id": 32,
+                  "nodeType": "ExpressionStatement",
+                  "src": "311:52:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 34,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addSpot",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "267:2:0"
+            },
+            "returnParameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "278:0:0"
+            },
+            "scope": 47,
+            "src": "250:120:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 45,
+              "nodeType": "Block",
+              "src": "404:73:0",
+              "statements": [
+                {
+                  "body": {
+                    "id": 43,
+                    "nodeType": "Block",
+                    "src": "437:34:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "id": 40,
+                            "name": "addSpot",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 34,
+                            "src": "451:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                              "typeString": "function ()"
+                            }
+                          },
+                          "id": 41,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "451:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 42,
+                        "nodeType": "ExpressionStatement",
+                        "src": "451:9:0"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 37,
+                      "name": "spotsCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 16,
+                      "src": "420:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "3230",
+                      "id": 38,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "434:2:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_20_by_1",
+                        "typeString": "int_const 20"
+                      },
+                      "value": "20"
+                    },
+                    "src": "420:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 44,
+                  "nodeType": "WhileStatement",
+                  "src": "414:57:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "parking",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "393:2:0"
+            },
+            "returnParameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "404:0:0"
+            },
+            "scope": 47,
+            "src": "376:101:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "private"
+          }
+        ],
+        "scope": 48,
+        "src": "26:454:0"
+      }
+    ],
+    "src": "1:479:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Parking.sol",
+      "exportedSymbols": {
+        "Parking": [
+          47
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "1:23:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            47
+          ],
+          "name": "Parking",
+          "scope": 48
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "Parking.Spot",
+              "name": "Spot",
+              "scope": 47,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "scope": 10,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "71:4:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "71:7:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "isAvailable",
+                  "scope": 10,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 4,
+                    "name": "ElementaryTypeName",
+                    "src": "88:4:0"
+                  }
+                ],
+                "id": 5,
+                "name": "VariableDeclaration",
+                "src": "88:16:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "carSerialNumber",
+                  "scope": 10,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 6,
+                    "name": "ElementaryTypeName",
+                    "src": "114:6:0"
+                  }
+                ],
+                "id": 7,
+                "name": "VariableDeclaration",
+                "src": "114:22:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "modificationDate",
+                  "scope": 10,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 8,
+                    "name": "ElementaryTypeName",
+                    "src": "146:4:0"
+                  }
+                ],
+                "id": 9,
+                "name": "VariableDeclaration",
+                "src": "146:21:0"
+              }
+            ],
+            "id": 10,
+            "name": "StructDefinition",
+            "src": "50:124:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "spots",
+              "scope": 47,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct Parking.Spot)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct Parking.Spot)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "188:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Spot",
+                      "referencedDeclaration": 10,
+                      "type": "struct Parking.Spot"
+                    },
+                    "id": 12,
+                    "name": "UserDefinedTypeName",
+                    "src": "196:4:0"
+                  }
+                ],
+                "id": 13,
+                "name": "Mapping",
+                "src": "180:21:0"
+              }
+            ],
+            "id": 14,
+            "name": "VariableDeclaration",
+            "src": "180:34:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "spotsCount",
+              "scope": 47,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 15,
+                "name": "ElementaryTypeName",
+                "src": "221:4:0"
+              }
+            ],
+            "id": 16,
+            "name": "VariableDeclaration",
+            "src": "221:22:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addSpot",
+              "scope": 47,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 17,
+                "name": "ParameterList",
+                "src": "267:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 18,
+                "name": "ParameterList",
+                "src": "278:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 16,
+                              "type": "uint256",
+                              "value": "spotsCount"
+                            },
+                            "id": 19,
+                            "name": "Identifier",
+                            "src": "288:10:0"
+                          }
+                        ],
+                        "id": 20,
+                        "name": "UnaryOperation",
+                        "src": "288:13:0"
+                      }
+                    ],
+                    "id": 21,
+                    "name": "ExpressionStatement",
+                    "src": "288:13:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct Parking.Spot storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct Parking.Spot storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 14,
+                                  "type": "mapping(uint256 => struct Parking.Spot storage ref)",
+                                  "value": "spots"
+                                },
+                                "id": 22,
+                                "name": "Identifier",
+                                "src": "311:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 16,
+                                  "type": "uint256",
+                                  "value": "spotsCount"
+                                },
+                                "id": 23,
+                                "name": "Identifier",
+                                "src": "317:10:0"
+                              }
+                            ],
+                            "id": 24,
+                            "name": "IndexAccess",
+                            "src": "311:17:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct Parking.Spot memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                                      "typeString": "literal_string \"\""
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 10,
+                                  "type": "type(struct Parking.Spot storage pointer)",
+                                  "value": "Spot"
+                                },
+                                "id": 25,
+                                "name": "Identifier",
+                                "src": "331:4:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 16,
+                                  "type": "uint256",
+                                  "value": "spotsCount"
+                                },
+                                "id": 26,
+                                "name": "Identifier",
+                                "src": "336:10:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "66616c7365",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "false"
+                                },
+                                "id": 27,
+                                "name": "Literal",
+                                "src": "348:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"\"",
+                                  "value": ""
+                                },
+                                "id": 28,
+                                "name": "Literal",
+                                "src": "355:2:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 64,
+                                  "type": "uint256",
+                                  "value": "now"
+                                },
+                                "id": 29,
+                                "name": "Identifier",
+                                "src": "359:3:0"
+                              }
+                            ],
+                            "id": 30,
+                            "name": "FunctionCall",
+                            "src": "331:32:0"
+                          }
+                        ],
+                        "id": 31,
+                        "name": "Assignment",
+                        "src": "311:52:0"
+                      }
+                    ],
+                    "id": 32,
+                    "name": "ExpressionStatement",
+                    "src": "311:52:0"
+                  }
+                ],
+                "id": 33,
+                "name": "Block",
+                "src": "278:92:0"
+              }
+            ],
+            "id": 34,
+            "name": "FunctionDefinition",
+            "src": "250:120:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "parking",
+              "scope": 47,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "393:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 36,
+                "name": "ParameterList",
+                "src": "404:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "<=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 16,
+                              "type": "uint256",
+                              "value": "spotsCount"
+                            },
+                            "id": 37,
+                            "name": "Identifier",
+                            "src": "420:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "3230",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 20",
+                              "value": "20"
+                            },
+                            "id": 38,
+                            "name": "Literal",
+                            "src": "434:2:0"
+                          }
+                        ],
+                        "id": 39,
+                        "name": "BinaryOperation",
+                        "src": "420:16:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "arguments": [
+                                    null
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "tuple()",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        null
+                                      ],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 34,
+                                      "type": "function ()",
+                                      "value": "addSpot"
+                                    },
+                                    "id": 40,
+                                    "name": "Identifier",
+                                    "src": "451:7:0"
+                                  }
+                                ],
+                                "id": 41,
+                                "name": "FunctionCall",
+                                "src": "451:9:0"
+                              }
+                            ],
+                            "id": 42,
+                            "name": "ExpressionStatement",
+                            "src": "451:9:0"
+                          }
+                        ],
+                        "id": 43,
+                        "name": "Block",
+                        "src": "437:34:0"
+                      }
+                    ],
+                    "id": 44,
+                    "name": "WhileStatement",
+                    "src": "414:57:0"
+                  }
+                ],
+                "id": 45,
+                "name": "Block",
+                "src": "404:73:0"
+              }
+            ],
+            "id": 46,
+            "name": "FunctionDefinition",
+            "src": "376:101:0"
+          }
+        ],
+        "id": 47,
+        "name": "ContractDefinition",
+        "src": "26:454:0"
+      }
+    ],
+    "id": 48,
+    "name": "SourceUnit",
+    "src": "1:479:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x6b550Ab94069dD12ca954b54967b2276089fBcb2",
+      "transactionHash": "0x4d366274b8b5954939175b675c244dc17b6610073665266a1a0fe45e4fd43c04"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-04-15T17:17:40.730Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
