@@ -104,7 +104,7 @@
   }
   
   /* Button 1 */
-  #button-1 .knobs:before {
+  .button-1 .knobs:before {
     content: "LIBRE";
     position: absolute;
     top: 4px;
@@ -122,19 +122,19 @@
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
   }
   
-  #button-1 .checkbox:checked + .knobs:before {
+  .button-1 .checkbox:checked + .knobs:before {
     content: "OCCUPEE";
     left: 42px;
     background-color: #f44336;
   }
   
-  #button-1 .checkbox:checked ~ .layer {
+  .button-1 .checkbox:checked ~ .layer {
     background-color: #fcebeb;
   }
   
-  #button-1 .knobs,
-  #button-1 .knobs:before,
-  #button-1 .layer {
+  .button-1 .knobs,
+  .button-1 .knobs:before,
+  .button-1 .layer {
     transition: 0.3s ease all;
   }
   
